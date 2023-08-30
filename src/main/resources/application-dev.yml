@@ -1,0 +1,18 @@
+spring:
+  config:
+    import: optional:certs/config.properties
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+rsa:
+  rsaPrivateKey: ${RSA_PRIVATE_KEY}
+  rsaPublicKey: ${RSA_PUBLIC_KEY}
