@@ -24,7 +24,7 @@ public class SecurityConfig {
 //                        .requestMatchers(WHITELISTED_URLS).permitAll()
                         .anyRequest().permitAll())
 
-                .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt)
+//                .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 
                 .build();
